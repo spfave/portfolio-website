@@ -9,20 +9,61 @@
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  margin: 0;
-  height: auto;
   background-color: #f4f4f4;
+  max-width: 1200px;
+  margin: auto;
 }
 
 main {
-  max-width: 1200px;
-  margin: auto;
   box-shadow: 30px 0px 30px rgba(0, 0, 0, 0.1),
     -30px 0px 30px rgba(0, 0, 0, 0.1);
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: min(100%, 1200px);
+  z-index: 10;
+  background-color: #373a3c;
+  padding: 15px 20px;
+}
+
+header .nav-items {
+  display: flex;
+  padding-left: 0;
+}
+
+header .nav-link {
+  display: block;
+  color: #fff;
+  font-size: 1.25rem;
+  margin-left: 1em;
+}
+
+header .nav-link:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0px;
+  margin: 2px auto 0;
+  transition: all 0.5s ease;
+}
+
+header .nav-link:hover:after {
+  width: 100%;
+  background-color: #fff;
 }
 
 /* Landing Section */
@@ -38,13 +79,13 @@ a {
   justify-content: center;
   height: 100vh;
   width: 45%;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 #landing h1 {
   font-size: 3rem;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 2.3px;
   text-transform: uppercase;
 }
 
@@ -66,7 +107,7 @@ a {
   font-weight: 500;
   margin-top: 1.5rem;
   padding: 1em 3em;
-  transition: background-color 500ms ease;
+  transition: background-color 0.5s ease;
 }
 
 #landing .btn:hover {
@@ -74,17 +115,18 @@ a {
 }
 
 #landing .landing-image {
+  /* Photo credit: Photo by Alexandru Acea on Unsplash*/
   background-image: url(../img/code-desk-large.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 60%;
+  width: 55%;
   z-index: 1;
 }
 
 /* Media Queries */
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 880px) {
   /* Landing Section */
   #landing {
     flex-direction: column;
@@ -98,6 +140,12 @@ a {
     height: 40vh;
     width: 100%;
     padding: 0 10px;
+    text-align: center;
+  }
+
+  #landing .landing-text {
+    position: relative;
+    transform: translateY(28px);
   }
 
   #landing .landing-image {
@@ -109,11 +157,10 @@ a {
 @media screen and (max-width: 550px) {
   /* Landing Section */
   #landing .landing-intro {
-    text-align: center;
   }
 
   #landing h1 {
-    font-size: 2.25rem;
+    font-size: 2.4rem;
   }
 
   #landing h3 {
