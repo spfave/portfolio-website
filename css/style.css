@@ -1,0 +1,84 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* Tags */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: auto;
+  background-color: #f4f4f4;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 30px 0px 30px rgba(0, 0, 0, 0.1),
+    -30px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Landing Section */
+#landing {
+  display: flex;
+  background-color: #fff;
+}
+
+#landing .landing-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 45%;
+  padding: 0 10px;
+}
+
+#landing h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#landing h3 {
+  font-size: 1.253em;
+  text-transform: capitalize;
+  color: #888;
+}
+
+#landing h3 span {
+  font-weight: 100;
+}
+
+#landing .btn {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  color: #444;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  padding: 1em 3em;
+  transition: background-color 500ms ease;
+}
+
+#landing .btn:hover {
+  background-color: #f4f4f4;
+}
+
+.landing-image {
+  background-image: url(../img/code-desk-large.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 60%;
+  z-index: 1;
+}
