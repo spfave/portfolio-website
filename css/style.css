@@ -73,7 +73,7 @@ a {
   background-color: #f4f4f4;
 }
 
-.landing-image {
+#landing .landing-image {
   background-image: url(../img/code-desk-large.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -81,4 +81,31 @@ a {
   height: 100vh;
   width: 60%;
   z-index: 1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 935px) {
+  /* Landing Section */
+  #landing {
+    flex-direction: column;
+  }
+
+  #landing .landing-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #landing .btn {
+    padding: 0.5rem 2rem;
+  }
+
+  #landing .landing-image {
+    height: 60vh;
+    width: 100%;
+  }
 }
