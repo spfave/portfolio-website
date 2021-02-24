@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   /* Colors */
-  --color-background-dark: rgb(55, 58, 60);
+  --color-background-dark: #373a3c;
   --color-background-light: #f4f4f4;
   --color-text-dark: var(--color-background-dark);
   --color-text-darkgrey: #444;
@@ -11,7 +11,7 @@
 }
 
 /* Font import */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /* Tags */
 * {
@@ -29,6 +29,23 @@ body {
 main {
   box-shadow: 30px 0px 30px rgba(0, 0, 0, 0.1),
     -30px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: var(--color-text-dark);
+}
+
+h3 {
+  color: var(--color-text-medgrey);
+}
+
+p {
+  color: var(--color-text-darkgrey);
 }
 
 ul {
@@ -52,6 +69,7 @@ header {
   padding: 15px 20px;
 }
 
+/* Header: Nav */
 header .nav-items {
   display: flex;
   padding-left: 0;
@@ -82,6 +100,7 @@ header .nav-link:hover:after {
 #landing {
   display: flex;
   background-color: var(--color-white);
+  padding: 0;
 }
 
 #landing .landing-intro {
@@ -95,17 +114,15 @@ header .nav-link:hover:after {
 }
 
 #landing h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 900;
-  letter-spacing: 2.3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--color-text-dark);
 }
 
 #landing h3 {
   font-size: 1.25em;
   text-transform: capitalize;
-  color: var(--color-text-medgrey);
 }
 
 #landing h3 span {
@@ -136,6 +153,16 @@ header .nav-link:hover:after {
   height: 100vh;
   width: 55%;
   z-index: 1;
+}
+
+/* About Me Section */
+.about-me-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-me-text {
+  width: 60%;
 }
 
 /* Media Queries */
@@ -170,7 +197,7 @@ header .nav-link:hover:after {
 @media screen and (max-width: 550px) {
   /* Landing Section */
   #landing h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 
   #landing h3 {
