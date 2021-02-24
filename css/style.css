@@ -1,3 +1,15 @@
+/* Variables */
+:root {
+  /* Colors */
+  --color-background-dark: rgb(55, 58, 60);
+  --color-background-light: #f4f4f4;
+  --color-text-dark: var(--color-background-dark);
+  --color-text-darkgrey: #444;
+  --color-text-medgrey: #888;
+  --color-white: #fff;
+  --color-lightgrey: #ccc;
+}
+
 /* Font import */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
@@ -9,7 +21,7 @@
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--color-background-light);
   max-width: 1200px;
   margin: auto;
 }
@@ -36,7 +48,7 @@ header {
   top: 0;
   width: min(100%, 1200px);
   z-index: 10;
-  background-color: #373a3c;
+  background-color: var(--color-background-dark);
   padding: 15px 20px;
 }
 
@@ -47,7 +59,7 @@ header .nav-items {
 
 header .nav-link {
   display: block;
-  color: #fff;
+  color: var(--color-white);
   font-size: 1.25rem;
   margin-left: 1em;
 }
@@ -63,13 +75,13 @@ header .nav-link:after {
 
 header .nav-link:hover:after {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 /* Landing Section */
 #landing {
   display: flex;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 #landing .landing-intro {
@@ -87,12 +99,13 @@ header .nav-link:hover:after {
   font-weight: 900;
   letter-spacing: 2.3px;
   text-transform: uppercase;
+  color: var(--color-text-dark);
 }
 
 #landing h3 {
   font-size: 1.25em;
   text-transform: capitalize;
-  color: #888;
+  color: var(--color-text-medgrey);
 }
 
 #landing h3 span {
@@ -101,9 +114,9 @@ header .nav-link:hover:after {
 
 #landing .btn {
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-lightgrey);
   border-radius: 25px;
-  color: #444;
+  color: var(--color-text-darkgrey);
   font-weight: 500;
   margin-top: 1.5rem;
   padding: 1em 3em;
@@ -111,7 +124,7 @@ header .nav-link:hover:after {
 }
 
 #landing .btn:hover {
-  background-color: #f4f4f4;
+  background-color: var(--color-background-light);
 }
 
 #landing .landing-image {
@@ -156,9 +169,6 @@ header .nav-link:hover:after {
 
 @media screen and (max-width: 550px) {
   /* Landing Section */
-  #landing .landing-intro {
-  }
-
   #landing h1 {
     font-size: 2.4rem;
   }
