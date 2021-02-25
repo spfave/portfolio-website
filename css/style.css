@@ -189,24 +189,25 @@ header .nav-link:hover:after {
   justify-content: center;
 }
 
-.about-me-content img {
+/* .about-me-content */
+#about-me .section-content img {
   display: inline-block;
   width: 50%;
   height: auto;
-  border-radius: 50px;
+  border-radius: 0 0 0 25px;
 }
 
-.about-me-text {
+.section-text {
   flex: 1 0 55%;
   justify-content: center;
   padding-right: 20px;
 }
 
-.about-me-text p {
+.section-text p {
   padding-top: 10px;
 }
 
-.profile-links a {
+.section-text .profile-links a {
   display: inline-block;
   color: var(--color-background-dark);
   margin-right: 10px;
@@ -216,11 +217,11 @@ header .nav-link:hover:after {
 /* Work Section */
 
 /* Contact Section */
-.contact-content img {
+#contact .section-content img {
   display: inline-block;
   width: 80%;
   height: auto;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 /* Media Queries */
@@ -254,11 +255,11 @@ header .nav-link:hover:after {
   }
 
   /* About Me Section */
-  .about-me-content .section-image {
+  .section-content .section-image-container {
     flex-basis: 30%;
   }
 
-  .about-me-content img {
+  #about-me .section-content img {
     width: 80%;
   }
 }
@@ -279,29 +280,37 @@ header .nav-link:hover:after {
   }
 
   /* About me Section */
-  .about-me-content {
+  .section-content {
     flex-direction: column;
   }
 
-  .about-me-content img {
+  #about-me .section-content img {
     width: 50%;
   }
 
-  .about-me-text {
+  .section-text {
     padding-left: 20px;
   }
 
-  .about-me-content h4 {
+  .section-content h4 {
     text-align: center;
     padding-top: 20px;
   }
 
-  .about-me-content .profile-links {
+  .section-text .profile-links {
     text-align: center;
   }
 
   /* Contact Section */
-  .contact-content {
-    flex-direction: column;
+  #contact .section-image-container {
+    display: none;
+  }
+
+  #contact .section-text {
+    text-align: center;
+  }
+
+  #contact .section-text h4 {
+    padding-top: 0;
   }
 }
