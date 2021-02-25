@@ -37,7 +37,8 @@ section {
 }
 
 h1,
-h2 {
+h2,
+strong {
   color: var(--color-text-dark);
 }
 
@@ -45,7 +46,7 @@ h2 {
   font-size: 1.75rem;
   font-weight: 700;
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 h3,
@@ -182,13 +183,13 @@ header .nav-link:hover:after {
 }
 
 /* About Me Section */
-.about-me-image {
+.section-image-container {
   flex: 0 1 45%;
   align-items: center;
   justify-content: center;
 }
 
-.about-me-image img {
+.about-me-content img {
   display: inline-block;
   width: 50%;
   height: auto;
@@ -204,6 +205,7 @@ header .nav-link:hover:after {
 .about-me-text p {
   padding-top: 10px;
 }
+
 .profile-links a {
   display: inline-block;
   color: var(--color-background-dark);
@@ -214,6 +216,12 @@ header .nav-link:hover:after {
 /* Work Section */
 
 /* Contact Section */
+.contact-content img {
+  display: inline-block;
+  width: 80%;
+  height: auto;
+  border-radius: 50px;
+}
 
 /* Media Queries */
 @media screen and (max-width: 880px) {
@@ -246,11 +254,11 @@ header .nav-link:hover:after {
   }
 
   /* About Me Section */
-  .about-me-image {
+  .about-me-content .section-image {
     flex-basis: 30%;
   }
 
-  .about-me-image img {
+  .about-me-content img {
     width: 80%;
   }
 }
@@ -275,7 +283,7 @@ header .nav-link:hover:after {
     flex-direction: column;
   }
 
-  .about-me-image img {
+  .about-me-content img {
     width: 50%;
   }
 
@@ -290,5 +298,10 @@ header .nav-link:hover:after {
 
   .about-me-content .profile-links {
     text-align: center;
+  }
+
+  /* Contact Section */
+  .contact-content {
+    flex-direction: column;
   }
 }
