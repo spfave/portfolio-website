@@ -208,13 +208,16 @@ header .nav-link:hover:after {
 .about-me-text p {
   padding-top: 10px;
 }
-
-.about-me-text a {
+.profile-links a {
   display: inline-block;
   color: var(--color-background-dark);
   margin-right: 10px;
   padding-top: 10px;
 }
+
+/* Work Section */
+
+/* Contact Section */
 
 /* Media Queries */
 @media screen and (max-width: 880px) {
