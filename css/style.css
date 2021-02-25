@@ -40,12 +40,17 @@ h2 {
   color: var(--color-text-dark);
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 h3 {
   color: var(--color-text-medgrey);
 }
 
 p {
   color: var(--color-text-darkgrey);
+  line-height: 1.3;
 }
 
 ul {
@@ -54,6 +59,15 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+/* Utility Classes */
+.section-style1 {
+  background-color: var(--color-white);
+}
+
+.section-style2 {
+  background-color: var(--color-background-light);
 }
 
 /* Header */
@@ -79,7 +93,7 @@ header .nav-link {
   display: block;
   color: var(--color-white);
   font-size: 1.25rem;
-  margin-left: 1em;
+  margin-left: 25px;
 }
 
 header .nav-link:after {
@@ -99,7 +113,7 @@ header .nav-link:hover:after {
 /* Landing Section */
 #landing {
   display: flex;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   padding: 0;
 }
 
@@ -159,10 +173,42 @@ header .nav-link:hover:after {
 .about-me-content {
   display: flex;
   justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.about-me-image {
+  display: flex;
+  flex: 0 5 45%;
+  align-items: center;
+  justify-content: center;
+  /* width: 45%; */
+}
+
+.about-me-image img {
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
 }
 
 .about-me-text {
-  width: 60%;
+  display: flex;
+  flex: 0 1 55%;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+  /* width: 55%; */
+}
+
+.about-me-text p {
+  padding-top: 10px;
+}
+
+.about-me-text a {
+  display: inline-block;
+  color: var(--color-background-dark);
+  /* margin-top: 10px; */
+  margin-right: 10px;
+  padding-top: 10px;
 }
 
 /* Media Queries */
