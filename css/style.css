@@ -71,6 +71,15 @@ a {
 }
 
 /* Utility Classes */
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-style1 {
   background-color: var(--color-white);
 }
@@ -81,7 +90,6 @@ a {
 
 /* Header */
 header {
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   position: fixed;
@@ -94,7 +102,6 @@ header {
 
 /* Header: Nav */
 header .nav-items {
-  display: flex;
   padding-left: 0;
 }
 
@@ -121,14 +128,10 @@ header .nav-link:hover:after {
 
 /* Landing Section */
 #landing {
-  display: flex;
-  /* background-color: var(--color-white); */
   padding: 0;
 }
 
 #landing .landing-intro {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -179,12 +182,7 @@ header .nav-link:hover:after {
 }
 
 /* About Me Section */
-.about-me-content {
-  display: flex;
-}
-
 .about-me-image {
-  display: flex;
   flex: 0 1 45%;
   align-items: center;
   justify-content: center;
@@ -198,9 +196,7 @@ header .nav-link:hover:after {
 }
 
 .about-me-text {
-  display: flex;
   flex: 1 0 55%;
-  flex-direction: column;
   justify-content: center;
   padding-right: 20px;
 }
@@ -233,10 +229,6 @@ header .nav-link:hover:after {
   }
 
   #landing .landing-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 40vh;
     width: 100%;
     padding: 0 10px;

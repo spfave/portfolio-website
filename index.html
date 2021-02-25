@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="flex-row">
         <nav class="navbar">
-            <ul class="nav-items">
+            <ul class="nav-items flex-row">
                 <li><a class="nav-link" href="#about-me">About Me</a></li>
                 <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -23,8 +23,8 @@
 
     <main>
         <!-- Landing Section -->
-        <section id="landing" class="section-style1">
-            <div class="landing-intro">
+        <section id="landing" class="section-style1 flex-row">
+            <div class="landing-intro flex-column">
                 <div class="landing-text">
                     <h1>Sebastian Fav&egrave</h1>
                     <h3>Developer <span>&nbsp;&mdash;&nbsp;</span> Programmer <span>&nbsp;&mdash;&nbsp;</span> Tech
@@ -38,11 +38,11 @@
         <!-- About Me Section -->
         <section id="about-me" class="section-style2">
             <h2 class="section-heading">About Me</h2>
-            <div class="about-me-content">
-                <div class="about-me-image">
+            <div class="about-me-content flex-row">
+                <div class="about-me-image flex-row">
                     <img src="./img/self-portrait-nbg.png" alt="Portrait photo of Sebastian Fave">
                 </div>
-                <div class="about-me-text">
+                <div class="about-me-text flex-column">
                     <h4>Get to Know Me</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem commodi, suscipit debitis
                         reprehenderit velit! Est tempore unde soluta commodi, laboriosam ipsum nesciunt, voluptatibus
@@ -71,7 +71,7 @@
         <!-- Contact Section -->
         <section id="contact" class="section-style2">
             <h2 class="section-heading">Let's Work Together</h2>
-            <div class="contact-content">
+            <div class="contact-content flex-row">
                 <div class="contact-image">
                     <!-- Photo credit: Photo by Marvin Meyer on Unsplash -->
                     <img src="./img/laptop-collaboration.jpg"
