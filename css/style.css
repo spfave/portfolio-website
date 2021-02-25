@@ -23,6 +23,7 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: var(--color-background-light);
   max-width: 1200px;
+  min-width: 400px;
   margin: auto;
 }
 
@@ -32,7 +33,7 @@ main {
 }
 
 section {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 h1,
@@ -41,11 +42,19 @@ h2 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 
-h3 {
+h3,
+h4 {
   color: var(--color-text-medgrey);
+}
+
+h4 {
+  font-size: 1.25rem;
 }
 
 p {
@@ -172,19 +181,17 @@ header .nav-link:hover:after {
 /* About Me Section */
 .about-me-content {
   display: flex;
-  justify-content: flex-end;
-  padding: 20px 0;
 }
 
 .about-me-image {
   display: flex;
-  flex: 0 5 45%;
+  flex: 0 1 45%;
   align-items: center;
   justify-content: center;
-  /* width: 45%; */
 }
 
 .about-me-image img {
+  display: inline-block;
   width: 50%;
   height: auto;
   border-radius: 50px;
@@ -192,11 +199,10 @@ header .nav-link:hover:after {
 
 .about-me-text {
   display: flex;
-  flex: 0 1 55%;
+  flex: 1 0 55%;
   flex-direction: column;
   justify-content: center;
   padding-right: 20px;
-  /* width: 55%; */
 }
 
 .about-me-text p {
@@ -206,13 +212,18 @@ header .nav-link:hover:after {
 .about-me-text a {
   display: inline-block;
   color: var(--color-background-dark);
-  /* margin-top: 10px; */
   margin-right: 10px;
   padding-top: 10px;
 }
 
 /* Media Queries */
 @media screen and (max-width: 880px) {
+  /* Tags */
+  h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+
   /* Landing Section */
   #landing {
     flex-direction: column;
@@ -238,6 +249,15 @@ header .nav-link:hover:after {
     height: 60vh;
     width: 100%;
   }
+
+  /* About Me Section */
+  .about-me-image {
+    flex-basis: 30%;
+  }
+
+  .about-me-image img {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -253,5 +273,27 @@ header .nav-link:hover:after {
   #landing .btn {
     padding: 0.5rem 2rem;
     font-size: 1em;
+  }
+
+  /* About me Section */
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .about-me-image img {
+    width: 50%;
+  }
+
+  .about-me-text {
+    padding-left: 20px;
+  }
+
+  .about-me-content h4 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .about-me-content .profile-links {
+    text-align: center;
   }
 }
