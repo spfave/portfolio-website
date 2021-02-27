@@ -33,7 +33,7 @@ main {
 }
 
 section {
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 h1,
@@ -80,10 +80,10 @@ a {
 }
 
 .section-heading {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-bottom: 50px;
 }
 
 .section-subheading {
@@ -314,9 +314,18 @@ header .nav-link:hover:after {
 /* Contact Section */
 #contact .section-content img {
   display: inline-block;
-  width: 80%;
+  width: 90%;
   height: auto;
   border-radius: 25px;
+}
+
+#contact .section-image-container {
+  flex-basis: 50%;
+}
+
+#contact .section-text {
+  flex-basis: 50%;
+  padding-left: 40px;
 }
 
 /* Media Queries */
@@ -361,6 +370,11 @@ header .nav-link:hover:after {
   .section-text {
     padding-right: 20px;
   }
+
+  /* Contact Section */
+  #contact .section-text {
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -403,8 +417,6 @@ header .nav-link:hover:after {
   /* Work Section */
   .grid-works {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
   }
 
   .project.full {
