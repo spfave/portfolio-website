@@ -267,6 +267,7 @@ header .nav-link:hover:after {
 
 .project ul {
   list-style-type: "\2013\00a0\00a0";
+  margin-bottom: 1rem;
 }
 
 .project li {
@@ -277,7 +278,7 @@ header .nav-link:hover:after {
 
 .project .project-links {
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: auto;
 }
 
 .project .btn {
