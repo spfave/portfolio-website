@@ -173,7 +173,7 @@ header .nav-link:hover:after {
 
 #landing .landing-image {
   /* Photo credit: Photo by Alexandru Acea on Unsplash*/
-  background-image: url(../img/code-desk-large.jpg);
+  background-image: url(../img/code-desk-medium.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,7 +240,7 @@ header .nav-link:hover:after {
 }
 
 .project .project-image img:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .project h5 {
@@ -251,7 +251,7 @@ header .nav-link:hover:after {
   background-color: var(--color-text-darkgrey);
   color: var(--color-white);
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.75rem 1rem;
 }
 
@@ -260,8 +260,9 @@ header .nav-link:hover:after {
 }
 
 .project p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
 }
 
 .project ul {
@@ -269,7 +270,7 @@ header .nav-link:hover:after {
 }
 
 .project li {
-  color: var(--color-text-medgrey);
+  color: var(--color-text-darkgrey);
   font-size: 0.9rem;
   line-height: 1.5;
 }
