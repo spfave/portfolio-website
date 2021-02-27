@@ -227,12 +227,16 @@ header .nav-link:hover:after {
   padding: 1rem;
 }
 
-/* .project:nth-child(odd) {
-  background-color: #ddd;
-} */
-
 .project .project-image {
   position: relative;
+}
+
+.project .project-image img {
+  transition: opacity 0.5s;
+}
+
+.project .project-image img:hover {
+  opacity: 0.7;
 }
 
 .project img {
@@ -285,6 +289,11 @@ header .nav-link:hover:after {
   text-align: center;
   width: 150px;
   padding: 0.5em 0.5em;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.project .btn:hover {
+  box-shadow: 0 0 10px 0 var(--color-text-medgrey);
 }
 
 .project .btn-fill {
