@@ -255,12 +255,12 @@ header .nav-link:hover:after {
 }
 
 .project-text {
-  margin-top: 1rem;
+  margin-top: 20px;
 }
 
 .project p {
   font-size: 1rem;
-  line-height: 2.5;
+  line-height: 1.5;
 }
 
 .project ul {
@@ -273,13 +273,17 @@ header .nav-link:hover:after {
   line-height: 1.5;
 }
 
+.project .project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .project .btn {
   display: inline-block;
   border-radius: 25px;
   text-align: center;
   width: 150px;
-  margin-top: 1rem;
-  margin-right: 1rem;
   padding: 0.5em 0.5em;
 }
 
