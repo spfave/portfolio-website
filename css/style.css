@@ -402,10 +402,13 @@ header .nav-link:hover:after {
 
   /* Work Section */
   .grid-works {
-    /* display: grid; */
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
+  }
+
+  .project.full {
+    grid-column: 1/2;
   }
 
   .project .project-links {
