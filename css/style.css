@@ -200,7 +200,7 @@ header .nav-link:hover:after {
 .section-text {
   flex: 1 0 55%;
   justify-content: center;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .section-text p {
@@ -215,6 +215,25 @@ header .nav-link:hover:after {
 }
 
 /* Work Section */
+.grid-works {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-works .project {
+  background-color: #eee;
+  padding: 1rem;
+}
+
+.grid-works .project:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.grid-works .full {
+  grid-column: 1/4;
+}
 
 /* Contact Section */
 #contact .section-content img {
@@ -261,6 +280,10 @@ header .nav-link:hover:after {
 
   #about-me .section-content img {
     width: 80%;
+  }
+
+  .section-text {
+    padding-right: 20px;
   }
 }
 
