@@ -161,7 +161,7 @@ header .nav-link:hover:after {
   border: 1px solid var(--color-lightgrey);
   border-radius: 25px;
   color: var(--color-text-darkgrey);
-  font-weight: 500;
+  font-weight: 00;
   margin-top: 1.5rem;
   padding: 1em 3em;
   transition: background-color 0.5s ease;
@@ -217,21 +217,63 @@ header .nav-link:hover:after {
 /* Work Section */
 .grid-works {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
 }
 
-.grid-works .project {
-  background-color: #eee;
+/* Project Card */
+.project {
+  background-color: var(--color-background-light);
+  border: 1px solid var(--color-lightgrey);
   padding: 1rem;
 }
 
-.grid-works .project:nth-child(odd) {
+/* .project:nth-child(odd) {
   background-color: #ddd;
+} */
+
+.project .project-image {
+  position: relative;
 }
 
-.grid-works .full {
+.project img {
+  border: none;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.project h5 {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  background-color: var(--color-background-dark);
+  color: var(--color-white);
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.project-text {
+  margin-top: 1rem;
+}
+
+.project p {
+  font-size: 1rem;
+}
+
+.project ul {
+  list-style-type: "\2013\00a0\00a0";
+}
+
+.project li {
+  color: var(--color-text-medgrey);
+  font-size: 0.9rem;
+}
+
+.project.full {
   grid-column: 1/4;
 }
 
