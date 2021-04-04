@@ -19,6 +19,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: var(--color-background-light);
@@ -441,5 +445,11 @@ header .nav-link:hover:after {
 
   #contact .section-text h4 {
     padding-top: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
