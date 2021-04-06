@@ -239,6 +239,7 @@ header .nav-link:hover:after {
 .project .project-image img {
   border: none;
   object-fit: cover;
+  object-position: center top;
   width: 100%;
   height: 200px;
   transition: opacity 0.5s;
@@ -265,6 +266,7 @@ header .nav-link:hover:after {
 }
 
 .project p {
+  font-weight: 700;
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 0.25rem;
