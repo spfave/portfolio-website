@@ -12,6 +12,16 @@ This repository holds the source files for the personal portfolio website of Seb
 ![Portfolio website screenshot for Sebastian Favè](./assets/img/screenshot_portfolio.png)
 
 &nbsp;
+## **Technologies and Services**
+Web Technologies/Design
+- HTML5, CSS
+- Responsive Design: flex and grid display
+
+External Frameworks and Services
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+
+&nbsp;
 ## **Planned Future Improvements**
 To-Dos:
 - Contact form to complete email contact directly from website
