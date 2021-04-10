@@ -350,6 +350,19 @@ header .nav-link:hover:after {
   padding-left: 40px;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: var(--color-background-dark);
+}
+
+footer p {
+  color: var(--color-white);
+}
+
 /* Media Queries */
 @media screen and (max-width: 880px) {
   /* Tags */
