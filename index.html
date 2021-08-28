@@ -1,246 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Sebastian Fav&egrave</title>
     <!-- Favicon: Source Code icon by Icons8 -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- CSS: Font Awesome -->
-    <script src="https://kit.fontawesome.com/6e72fcd89f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6e72fcd89f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="flex-row">
-        <nav class="navbar">
-            <ul class="nav-items flex-row">
-                <li><a class="nav-link" href="#about-me">About Me</a></li>
-                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul class="nav-items flex-row">
+          <li><a class="nav-link" href="#about-me">About Me</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- Landing Section -->
-        <section id="landing" class="section-style1 flex-row">
-            <div class="landing-intro flex-column">
-                <div class="landing-text">
-                    <h1>Sebastian Fav&egrave</h1>
-                    <h3>Developer <span>&nbsp;&ndash;&nbsp;</span> Programmer <span>&nbsp;&ndash;&nbsp;</span> Tech
-                        Enthusiast</h3>
-                    <a href="#portfolio" id="view-work" class="btn">View Portfolio</a>
-                </div>
+      <!-- Landing Section -->
+      <section id="landing" class="section-style1 flex-row">
+        <div class="landing-intro flex-column">
+          <div class="landing-text">
+            <h1>Sebastian Fav&egrave</h1>
+            <h3>
+              Developer <span>&nbsp;&ndash;&nbsp;</span> Programmer
+              <span>&nbsp;&ndash;&nbsp;</span> Tech Enthusiast
+            </h3>
+            <a href="#portfolio" id="view-work" class="btn">View Portfolio</a>
+          </div>
+        </div>
+        <div class="landing-image"></div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about-me" class="section-style2">
+        <h2 class="section-heading">About Me</h2>
+        <div class="section-content flex-row">
+          <div class="section-text">
+            <p>
+              Hi, I'm Sebastian and I'm endeavouring to become a full-stack web
+              developer. To that end I have been enthusiastically learning web
+              development skills and joined an applied web development
+              technologies course through the George Washington University to
+              gain experience working in a collaborative environment and expand
+              my professional network.
+            </p>
+            <p>
+              I'm looking forward to solving challenging problems in the
+              technology sector, all while feeding my passion for learning and
+              understanding how products and services are designed, built, and
+              maintained.
+            </p>
+            <div class="profile-links">
+              <a href="https://github.com/spfave" target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sebastian-fave/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin fa-2x"></i
+              ></a>
+              <a
+                href="./assets/data/Sebastian-Fave-Resume.pdf"
+                class="resume-link"
+              >
+                <i class="fas fa-address-card fa-2x"></i>
+                <p>R&eacute;sum&eacute;</p>
+              </a>
             </div>
-            <div class="landing-image"></div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- About Me Section -->
-        <section id="about-me" class="section-style2">
-            <h2 class="section-heading">About Me</h2>
-            <div class="section-content flex-row">
-                <div class="section-text">
-                    <p>Hi, I'm Sebastian and I'm endeavouring to become a full-stack web developer. To that end I have
-                        been enthusiastically learning web development skills and joined an applied web development
-                        technologies course through the George Washington University to gain experience working in a
-                        collaborative environment and expand my
-                        professional network.
-                    </p>
-                    <p>I'm looking forward to solving challenging problems in the technology sector, all while feeding
-                        my
-                        passion for learning and understanding how products and services are designed, built, and
-                        maintained.
-                    </p>
-                    <div class="profile-links">
-                        <a href="https://github.com/spfave" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/sebastian-fave/" target="_blank">
-                            <i class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="./assets/data/sebastian-fave-resume.pdf" class="resume-link">
-                            <i class="fas fa-address-card fa-2x"></i>
-                            <p>R&eacute;sum&eacute;</p>
-                        </a>
-                    </div>
-                </div>
+      <!-- Work Section -->
+      <section id="portfolio" class="section-style1">
+        <h2 class="section-heading">Portfolio</h2>
+        <div class="grid-works">
+          <section class="project flex-column full">
+            <div class="project-image">
+              <a
+                href="https://gwu-hiker-tracker.herokuapp.com/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/portfolio_projects/hiketracker_home.png"
+                  alt="Screenshot of hike tracker website project"
+                />
+              </a>
             </div>
-        </section>
-
-        <!-- Work Section -->
-        <section id="portfolio" class="section-style1">
-            <h2 class="section-heading">Portfolio</h2>
-            <div class="grid-works">
-
-                <section class="project flex-column full">
-                    <div class="project-image">
-                        <a href="https://gwu-hiker-tracker.herokuapp.com/" target="_blank">
-                            <img src="./assets/img/portfolio_projects/hiketracker_home.png"
-                                alt="Screenshot of hike tracker website project">
-                        </a>
-                    </div>
-                    <div class="project-text">
-                        <p>Hike and Trail Tracker</p>
-                        <ul>
-                            <li>Full stack web app for hikers to record completed hikes and document trail information
-                                for fellow hikers</li>
-                            <li>Collaborative designed and built full stack web application following the model view
-                                controller design paradigm and Agile software development life cycle</li>
-                            <li>App uses server-side HTML rendering with handlebars.js for the front end views,
-                                Node.js with express.js for back end routes and controller logic, and MySQL with
-                                Sequelize ORM for data persistence and CRUD operations</li>
-                            <li>User authentication and route protection implemented using passport.js using a local
-                                strategy
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="project-links flex-row">
-                        <a class="btn btn-fill" href="https://gwu-hiker-tracker.herokuapp.com/" target="_blank">Live
-                            App</a>
-                        <a class="btn btn-outline" href="https://github.com/spfave/hike-tracker" target="_blank"><i
-                                class="fas fa-code"></i> View Source</a>
-                    </div>
-                </section>
-
-                <section class="project flex-column">
-                    <div class="project-image">
-                        <a href="https://spf-tech-blog.herokuapp.com/" target="_blank">
-                            <img src="./assets/img/portfolio_projects/blog-create-post.png"
-                                alt="Screenshot of tech blog website project">
-                        </a>
-                    </div>
-                    <div class="project-text">
-                        <p>Tech Blog CMS</p>
-                        <ul>
-                            <li>Full stack web application following the model view controller design paradigm</li>
-                            <li>Utilizes Express, Node.js, MySQL, and Sequelize (ORM) for server and database
-                                functionality</li>
-                            <li>Uses handlebars.js for server-side HTML view templates and rendering</li>
-                            <li>Styled using themed Bootstrap file from <a href="https://bootswatch.com/lux/"
-                                    target="_blank">bootswatch.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="project-links flex-row">
-                        <a class="btn btn-fill" href="https://spf-tech-blog.herokuapp.com/" target="_blank">Live App</a>
-                        <a class="btn btn-outline" href="https://github.com/spfave/blog-site-mvc" target="_blank">
-                            <i class="fas fa-code"></i> View Source
-                        </a>
-                    </div>
-                </section>
-
-                <section class="project flex-column">
-                    <div class="project-image">
-                        <a href="https://spfave.github.io/fitness-exercise-food-selector/" target="_blank">
-                            <img src="./assets/img/portfolio_projects/foodfitness_home.png"
-                                alt="Screenshot of food and fitness tracker website project">
-                        </a>
-                    </div>
-                    <div class="project-text">
-                        <p>Food and Fitness Tracker</p>
-                        <ul>
-                            <li>Single page client-side web app to allow app users to record completed exercises and
-                                meals prepared</li>
-                            <li>App uses Foundation CSS framework for front end styling in combination with select
-                                custom CSS and JavaScript for dynamic front end modification</li>
-                            <li>App makes use of wger Workout Manager and Edamam recipe REST APIs for external fitness
-                                and recipe data</li>
-                            <li>Saves selected completed exercises and meal recipes to browser local storage for data
-                                persistence</li>
-                        </ul>
-                    </div>
-                    <div class="project-links flex-row">
-                        <a class="btn btn-fill" href="https://spfave.github.io/fitness-exercise-food-selector/"
-                            target="_blank">Live App</a>
-                        <a class="btn btn-outline" href="https://github.com/spfave/fitness-exercise-food-selector"
-                            target="_blank"><i class="fas fa-code"></i> View
-                            Source</a>
-                    </div>
-                </section>
-
-                <section class="project flex-column">
-                    <div class="project-image">
-                        <a href="https://spfave.github.io/web-weather-dashboard/" target="_blank">
-                            <img src="./assets/img/portfolio_projects/weather_dashboard.png"
-                                alt="Screenshot of weather dashboard website project">
-                        </a>
-                    </div>
-                    <p>City Search Weather Dashboard</p>
-                    <div class="project-text">
-                        <ul>
-                            <li>Utilized <a href="https://openweathermap.org/api" target="_blank">OpenWeather API</a> to
-                                create a city weather search dashboard
-                            </li>
-                            <li>API consumption performed using asynchronous JS using promises and async/await</li>
-                            <li>Recent searches saved to browser local storage for data persistence and retrieval</li>
-                            <li>Styled using themed Bootstrap file from <a href="https://bootswatch.com/flatly/"
-                                    target="_blank">bootswatch.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="project-links flex-row">
-                        <a class="btn btn-fill" href="https://spfave.github.io/web-weather-dashboard/"
-                            target="_blank">Live App</a>
-                        <a class="btn btn-outline" href="https://github.com/spfave/web-weather-dashboard"
-                            target="_blank"><i class="fas fa-code"></i> View Source</a>
-                    </div>
-                </section>
-
-                <section class="project flex-column">
-                    <div class="project-image">
-                        <a href="https://spfave.github.io/password_generator/" target="_blank">
-                            <img src="./assets/img/portfolio_projects/password_gen.png" alt="
-                            Screenshot of password generator website project">
-                        </a>
-                    </div>
-                    <div class="project-text">
-                        <p>Password Generator</p>
-                        <ul>
-                            <li>Accepts user input on password character categories and password length to generate a
-                                random password</li>
-                            <li>Implements custom random password character selection algorithm</li>
-                            <li>Built with HTML5, CSS3, and JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="project-links flex-row">
-                        <a class="btn btn-fill" href="https://spfave.github.io/password_generator/" target="_blank">Live
-                            App</a>
-                        <a class="btn btn-outline" href="https://github.com/spfave/gwu_hw3_password_gen"
-                            target="_blank"><i class="fas fa-code"></i> View
-                            Source</a>
-                    </div>
-                </section>
+            <div class="project-text">
+              <p>Hike and Trail Tracker</p>
+              <ul>
+                <li>
+                  Full stack web app for hikers to record completed hikes and
+                  document trail information for fellow hikers
+                </li>
+                <li>
+                  Collaborative designed and built full stack web application
+                  following the model view controller design paradigm and Agile
+                  software development life cycle
+                </li>
+                <li>
+                  App uses server-side HTML rendering with handlebars.js for the
+                  front end views, Node.js with express.js for back end routes
+                  and controller logic, and MySQL with Sequelize ORM for data
+                  persistence and CRUD operations
+                </li>
+                <li>
+                  User authentication and route protection implemented using
+                  passport.js using a local strategy
+                </li>
+              </ul>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section-style2">
-            <h2 class="section-heading">Let's Work Together</h2>
-            <div class="section-content flex-row">
-                <div class="section-image-container flex-row">
-                    <!-- Photo credit: Photo by Marvin Meyer on Unsplash -->
-                    <img src="./assets/img/laptop-collaboration.jpg"
-                        alt="people sitting down at table with assorted laptops and electronic gear">
-                </div>
-                <div class="section-text flex-column">
-                    <h4 class="section-subheading">Connect With Me</h4>
-                    <p>Email: <a href="mailto:spfave@outlook.com"><strong>spfave@outlook.com</strong></a></p>
-                    <div class="profile-links">
-                        <a href="https://github.com/spfave" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/sebastian-fave/" target="_blank"><i
-                                class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="./assets/data/sebastian-fave-resume.pdf" class="resume-link">
-                            <i class="fas fa-address-card fa-2x"></i>
-                            <p>R&eacute;sum&eacute;</p>
-                        </a>
-                    </div>
-                </div>
+            <div class="project-links flex-row">
+              <a
+                class="btn btn-fill"
+                href="https://gwu-hiker-tracker.herokuapp.com/"
+                target="_blank"
+                >Live App</a
+              >
+              <a
+                class="btn btn-outline"
+                href="https://github.com/spfave/hike-tracker"
+                target="_blank"
+                ><i class="fas fa-code"></i> View Source</a
+              >
             </div>
-        </section>
+          </section>
+
+          <section class="project flex-column">
+            <div class="project-image">
+              <a href="https://spf-tech-blog.herokuapp.com/" target="_blank">
+                <img
+                  src="./assets/img/portfolio_projects/blog-create-post.png"
+                  alt="Screenshot of tech blog website project"
+                />
+              </a>
+            </div>
+            <div class="project-text">
+              <p>Tech Blog CMS</p>
+              <ul>
+                <li>
+                  Full stack web application following the model view controller
+                  design paradigm
+                </li>
+                <li>
+                  Utilizes Express, Node.js, MySQL, and Sequelize (ORM) for
+                  server and database functionality
+                </li>
+                <li>
+                  Uses handlebars.js for server-side HTML view templates and
+                  rendering
+                </li>
+                <li>
+                  Styled using themed Bootstrap file from
+                  <a href="https://bootswatch.com/lux/" target="_blank"
+                    >bootswatch.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="project-links flex-row">
+              <a
+                class="btn btn-fill"
+                href="https://spf-tech-blog.herokuapp.com/"
+                target="_blank"
+                >Live App</a
+              >
+              <a
+                class="btn btn-outline"
+                href="https://github.com/spfave/blog-site-mvc"
+                target="_blank"
+              >
+                <i class="fas fa-code"></i> View Source
+              </a>
+            </div>
+          </section>
+
+          <section class="project flex-column">
+            <div class="project-image">
+              <a
+                href="https://spfave.github.io/fitness-exercise-food-selector/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/portfolio_projects/foodfitness_home.png"
+                  alt="Screenshot of food and fitness tracker website project"
+                />
+              </a>
+            </div>
+            <div class="project-text">
+              <p>Food and Fitness Tracker</p>
+              <ul>
+                <li>
+                  Single page client-side web app to allow app users to record
+                  completed exercises and meals prepared
+                </li>
+                <li>
+                  App uses Foundation CSS framework for front end styling in
+                  combination with select custom CSS and JavaScript for dynamic
+                  front end modification
+                </li>
+                <li>
+                  App makes use of wger Workout Manager and Edamam recipe REST
+                  APIs for external fitness and recipe data
+                </li>
+                <li>
+                  Saves selected completed exercises and meal recipes to browser
+                  local storage for data persistence
+                </li>
+              </ul>
+            </div>
+            <div class="project-links flex-row">
+              <a
+                class="btn btn-fill"
+                href="https://spfave.github.io/fitness-exercise-food-selector/"
+                target="_blank"
+                >Live App</a
+              >
+              <a
+                class="btn btn-outline"
+                href="https://github.com/spfave/fitness-exercise-food-selector"
+                target="_blank"
+                ><i class="fas fa-code"></i> View Source</a
+              >
+            </div>
+          </section>
+
+          <section class="project flex-column">
+            <div class="project-image">
+              <a
+                href="https://spfave.github.io/web-weather-dashboard/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/portfolio_projects/weather_dashboard.png"
+                  alt="Screenshot of weather dashboard website project"
+                />
+              </a>
+            </div>
+            <p>City Search Weather Dashboard</p>
+            <div class="project-text">
+              <ul>
+                <li>
+                  Utilized
+                  <a href="https://openweathermap.org/api" target="_blank"
+                    >OpenWeather API</a
+                  >
+                  to create a city weather search dashboard
+                </li>
+                <li>
+                  API consumption performed using asynchronous JS using promises
+                  and async/await
+                </li>
+                <li>
+                  Recent searches saved to browser local storage for data
+                  persistence and retrieval
+                </li>
+                <li>
+                  Styled using themed Bootstrap file from
+                  <a href="https://bootswatch.com/flatly/" target="_blank"
+                    >bootswatch.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="project-links flex-row">
+              <a
+                class="btn btn-fill"
+                href="https://spfave.github.io/web-weather-dashboard/"
+                target="_blank"
+                >Live App</a
+              >
+              <a
+                class="btn btn-outline"
+                href="https://github.com/spfave/web-weather-dashboard"
+                target="_blank"
+                ><i class="fas fa-code"></i> View Source</a
+              >
+            </div>
+          </section>
+
+          <section class="project flex-column">
+            <div class="project-image">
+              <a
+                href="https://spfave.github.io/password_generator/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/portfolio_projects/password_gen.png"
+                  alt="
+                            Screenshot of password generator website project"
+                />
+              </a>
+            </div>
+            <div class="project-text">
+              <p>Password Generator</p>
+              <ul>
+                <li>
+                  Accepts user input on password character categories and
+                  password length to generate a random password
+                </li>
+                <li>
+                  Implements custom random password character selection
+                  algorithm
+                </li>
+                <li>Built with HTML5, CSS3, and JavaScript</li>
+              </ul>
+            </div>
+            <div class="project-links flex-row">
+              <a
+                class="btn btn-fill"
+                href="https://spfave.github.io/password_generator/"
+                target="_blank"
+                >Live App</a
+              >
+              <a
+                class="btn btn-outline"
+                href="https://github.com/spfave/gwu_hw3_password_gen"
+                target="_blank"
+                ><i class="fas fa-code"></i> View Source</a
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-style2">
+        <h2 class="section-heading">Let's Work Together</h2>
+        <div class="section-content flex-row">
+          <div class="section-image-container flex-row">
+            <!-- Photo credit: Photo by Marvin Meyer on Unsplash -->
+            <img
+              src="./assets/img/laptop-collaboration.jpg"
+              alt="people sitting down at table with assorted laptops and electronic gear"
+            />
+          </div>
+          <div class="section-text flex-column">
+            <h4 class="section-subheading">Connect With Me</h4>
+            <p>
+              Email:
+              <a href="mailto:spfave@outlook.com"
+                ><strong>spfave@outlook.com</strong></a
+              >
+            </p>
+            <div class="profile-links">
+              <a href="https://github.com/spfave" target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sebastian-fave/"
+                target="_blank"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+              <a
+                href="./assets/data/sebastian-fave-resume.pdf"
+                class="resume-link"
+              >
+                <i class="fas fa-address-card fa-2x"></i>
+                <p>R&eacute;sum&eacute;</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2021 Sebastian Fav&egrave;</p>
+      <p>© 2021 Sebastian Fav&egrave;</p>
     </footer>
-</body>
-
+  </body>
 </html>
